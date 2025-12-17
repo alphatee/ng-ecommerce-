@@ -5,10 +5,10 @@ export const routes: Routes = [
         // Configuration to say that the root page of the store is the products-grid
         path: '',
         pathMatch: 'full',
-        redirectTo: 'products'
+        redirectTo: 'products/all'
     },
     {
-    path: 'products',
+    path: 'products/:category',
     loadComponent: () => import('./pages/products-grid/products-grid')
     },
     {
